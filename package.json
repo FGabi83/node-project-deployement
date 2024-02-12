@@ -1,16 +1,20 @@
 {
-  "name": "dang-thats-delicious",
-  "version": "0.0.0",
+  "name": "node-project",
+  "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "16.14.0",
+    "node": "16.x",
     "npm": "8.x"
   },
+  "vercel": {
+    "dotenv": "variables.env.now"
+
+  },
   "scripts": {
-    "prod": "node ./start.js",
+    "start": "node ./start.js",
     "build": "webpack",
     "watch": "nodemon ./start.js --ignore public/",
-    "start": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
+    "dev": "concurrently \"npm run watch\" \"npm run assets\" --names \"💻,📦\" --prefix name",
     "assets": "webpack -w",
     "sample": "node ./data/load-sample-data.js",
     "blowitallaway": "node ./data/load-sample-data.js --delete",
