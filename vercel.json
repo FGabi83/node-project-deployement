@@ -1,0 +1,9 @@
+{
+    "version": 2,
+    "routes": [
+      { "src": "/stores", "dest": "/views/stores.pug" },
+      { "src": "/(.*)", "dest": "/start.js" }
+    ],
+    "builds": [{ "src": "/start.js", "use": "@vercel/node" }]
+  }
+  
