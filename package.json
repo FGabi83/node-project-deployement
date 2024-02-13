@@ -4,12 +4,15 @@
   "private": true,
   "engines": {
     "node": "18.x",
-    "npm": "9.x"
+    "npm": "9.x",
+  "type": "module"
   },
   "vercel": {
     "dotenv": "variables.env.now"
 
   },
+  
+  
   "scripts": {
     "start": "node ./start.js",
     "build": "webpack",
