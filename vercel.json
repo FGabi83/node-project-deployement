@@ -1,9 +1,12 @@
 {
   "version": 2,
   "routes": [
-    { "src": "/", "dest": "/views/stores.pug" },
     { "src": "/(.*)", "dest": "/start.js" }
   ],
-  "builds": [{ "src": "/start.js", "use": "@vercel/node" }]
+  "builds": [
+    { "src": "/public/**", "use": "@vercel/static" },
+    { "src": "/start.js", "use": "@vercel/node" }
+    
+  ]
   }
   
