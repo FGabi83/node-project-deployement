@@ -6,7 +6,6 @@
     "node": "16.x",
     "npm": "8.x"
   },
-  "type": "module",
   "vercel": {
     "dotenv": "variables.env.now"
 
