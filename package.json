@@ -3,10 +3,10 @@
   "version": "0.0.1",
   "private": true,
   "engines": {
-    "node": "18.x",
-    "npm": "9.x",
-  "type": "module"
+    "node": "16.x",
+    "npm": "8.x"
   },
+  "type": "module",
   "vercel": {
     "dotenv": "variables.env.now"
 
